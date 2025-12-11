@@ -1,20 +1,10 @@
-#!/usr/bin/env python3
-"""
-mx_check_bot.py
-
-- Постоянно слушает Telegram-чат
-- Проверяет MX-записи email из сообщений
-- Отправляет результат обратно в тот же чат
-- Стабильная работа на Windows
-"""
-
 import re
 import time
 import dns.resolver
 import requests
 
-# ← Вставь сюда свой токен бота
-TG_BOT_TOKEN = "7976051695:AAFauJcvmn6v2JXtDWT4gnfwZ_ayewTgBTE"
+TG_BOT_TOKEN = "" # ← Вставь сюда свой токен бота
+
 
 API_GET_UPDATES = f"https://api.telegram.org/bot{TG_BOT_TOKEN}/getUpdates"
 API_SEND_MESSAGE = f"https://api.telegram.org/bot{TG_BOT_TOKEN}/sendMessage"
